@@ -5,7 +5,7 @@
 ##          The example below loops through dirs
 ##          with .tif files, pulls the year of the 
 ##          .tif file and adds it to a list, then 
-##          writes out the as .csv
+##          writes out the list as a .csv
 ##        
 ##          Work in progress :-)
 ##
