@@ -25,11 +25,7 @@ import pandas as pd
  CHIRT_DIR = '/Users/cascade/Github/UrbanHeat/data/test_in/'
  DATA_OUT = '/Users/cascade/Github/UrbanHeat/data/test_out/' 
 
-# Make dir list of sub dirs
-dir_list= glob(CHIRT_DIR+'*/')
-dir_list
-
-# Function 
+# Function to feed to your CPUs
 def test_mp(dir_nm):
 
     """ Loops through a dir with .tif files, isolates the year
@@ -61,6 +57,10 @@ def test_mp(dir_nm):
     out_df = pd.DataFrame(fn_list)
     out_df.to_csv(DATA_OUT+dir_year+'.csv')
     print('DONE ! ! !')
+
+# Make dir list of sub dirs
+dir_list= glob(CHIRT_DIR+'*/')
+dir_list
 
 # Start Clock
 start = time.time()
