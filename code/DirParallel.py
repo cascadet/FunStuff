@@ -22,8 +22,8 @@ import multiprocessing as mp
 import pandas as pd
 
 # Set path to dir to loop through sub dirs
- CHIRT_DIR = '/Users/cascade/Github/UrbanHeat/data/test_in/'
- DATA_OUT = '/Users/cascade/Github/UrbanHeat/data/test_out/' 
+CHIRT_DIR = '/Users/cascade/Github/UrbanHeat/data/test_in/'
+DATA_OUT = '/Users/cascade/Github/UrbanHeat/data/test_out/' 
 
 # Function to feed to your CPUs
 def test_mp(dir_nm):
